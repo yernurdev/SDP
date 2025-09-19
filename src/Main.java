@@ -6,6 +6,8 @@ public class Main {
                 .storage("2TB SSD")
                 .build();
 
+        gamingPc.setRam(64);
+
         System.out.println(gamingPc);
     }
 }

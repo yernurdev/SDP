@@ -1,9 +1,14 @@
 public class Computer {
     private final String cpu;
     private final String motherboard;
-    private final int ram;
+    private int ram;
     private final String gpu;
     private final String storage;
+
+
+    public void setRam(int ram){
+        this.ram = ram;
+    }
 
     private Computer(Builder builder) {
         this.cpu = builder.cpu;
@@ -13,11 +18,6 @@ public class Computer {
         this.storage = builder.storage;
     }
 
-    public String getCpu() { return cpu; }
-    public String getMotherboard() { return motherboard; }
-    public int getRam() { return ram; }
-    public String getGpu() { return gpu; }
-    public String getStorage() { return storage; }
 
     @Override
     public String toString() {
